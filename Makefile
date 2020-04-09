@@ -27,7 +27,7 @@ meta.tex: Makefile .FORCE
 	rm -f $@
 	touch $@
 	echo '% GENERATED FILE -- edit this in the Makefile' >>$@
-	/bin/echo '\newcommand{\lsstDocType}{$(DOCTYPE)}' >>$@
+	/bin/echo '\newcommand{\lsstDocType}{OPSTN}' >>$@
 	/bin/echo '\newcommand{\lsstDocNum}{$(DOCNUMBER)}' >>$@
 	/bin/echo '\newcommand{\vcsrevision}{$(GITVERSION)$(GITDIRTY)}' >>$@
 	/bin/echo '\newcommand{\vcsdate}{$(GITDATE)}' >>$@
